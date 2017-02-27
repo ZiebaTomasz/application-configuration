@@ -19,6 +19,10 @@ spring:
 server:
   port: ${PORT:3333}   # HTTP (Tomcat) port
 
+management:
+  security:
+    enabled: false
+
 ---
 
 spring:
@@ -35,3 +39,7 @@ spring:
 # HTTP Server
 server:
   port: ${PORT:3333}   # HTTP (Tomcat) port
+
+management:
+  security:
+    enabled: true
